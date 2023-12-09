@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: backgroundcolor 0.5s ease-in-out infinite alternate;
+}
+
+#showOutput {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.letterappe-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.alphabet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 100%;
+    background-color: #030303;
+    color: #ff0000;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    animation: scaleAnimation 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes colorChangeAnimation1 {
+    0% {
+        background-color: #960d0d;
+    }
+    50% {
+        background-color: rgb(0, 217, 255);
+    }
+    100% {
+        background-color: rgb(240, 199, 16);
+    }
+}
+
+@keyframes colorChangeAnimation2 {
+    0% {
+        background-color: #7e1010;
+    }
+    10% {
+        background-color: #00ff00;
+    }
+    20% {
+        background-color: rgb(9, 209, 236);
+    }
+    30% {
+        background-color: #00ff00;
+    }
+    40% {
+        background-color: rgb(236, 9, 229);
+    }
+    50% {
+        background-color: #00ff00;
+    }
+    60% {
+        background-color: rgb(236, 9, 229);
+    }
+    70% {
+        background-color: #00ff00;
+    }
+    80% {
+        background-color: rgb(236, 9, 229);
+    }
+    90% {
+        background-color: #00ff00;
+    }
+    100% {
+        background-color: rgb(236, 9, 229);
+    }
+}
+
+@keyframes colorChangeAnimation3 {
+    0% {
+        background-color: #fd1111;
+    }
+    50% {
+        background-color: #0000ff;
+    }
+    100% {
+        background-color: rgb(21, 241, 175);
+    }
+}
+
+.alphabet:nth-child(1):hover {
+    animation: colorChangeAnimation1 1.5s ease-in-out;
+}
+
+.alphabet:nth-child(2):hover {
+    animation: colorChangeAnimation2 1.5s ease-in-out;
+}
+
+.alphabet:nth-child(3):hover {
+    animation: colorChangeAnimation3 1.5s ease-in-out;
+}
+.alphabet:nth-child(4):hover {
+    animation: colorChangeAnimation3 1.5s ease-in-out;
+}
+.alphabet:nth-child(5):hover {
+    animation: colorChangeAnimation3 1.5s ease-in-out;
+}
+.alphabet:nth-child(6):hover {
+    animation: colorChangeAnimation3 1.5s ease-in-out;
+}
+
