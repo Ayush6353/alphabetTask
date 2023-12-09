@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    background-color: #ffffff;
     margin: 0;
     transition: backgroundcolor 0.5s ease-in-out infinite alternate;
 }
